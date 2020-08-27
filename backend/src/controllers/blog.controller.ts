@@ -18,7 +18,9 @@ import {
 } from '@loopback/rest';
 import {Blog} from '../models';
 import {BlogRepository} from '../repositories';
+import {authenticate} from '@loopback/authentication';
 
+@authenticate('jwt')
 export class BlogController {
   constructor(
     @repository(BlogRepository)
@@ -49,6 +51,7 @@ export class BlogController {
     return this.blogRepository.create(blog);
   }
 
+  @authenticate.skip()
   @get('/blogs', {
     responses: {
       '200': {
@@ -70,6 +73,7 @@ export class BlogController {
     return this.blogRepository.find(filter);
   }
 
+  @authenticate.skip()
   @get('/blogs/{id}', {
     responses: {
       '200': {

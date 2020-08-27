@@ -20,7 +20,9 @@ import {
   BlogTag,
 } from '../models';
 import {BlogRepository} from '../repositories';
+import {authenticate} from '@loopback/authentication';
 
+@authenticate('jwt')
 export class BlogBlogTagController {
   constructor(
     @repository(BlogRepository) protected blogRepository: BlogRepository,
