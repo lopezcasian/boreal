@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 10px;
+}
+
+.nav li {
+	display: inline;
+}
+
+.nav a {
+	display: inline-block;
+    padding: .4em 1.5em;
+}
+
+.img, .optionsDiv {
+    height: 40px;
+}
+
+@media (min-width: 960px) {
+	.header {
+		justify-content: space-between;
+	}
+}
