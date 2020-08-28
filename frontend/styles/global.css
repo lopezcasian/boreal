@@ -5,17 +5,21 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu,
     Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
   line-height: 1.6;
-  font-size: 12px;
+  font-size: 14px;
 }
 
 * {
   box-sizing: border-box;
 }
 
-.bg-yellow{
+.bg-yellow {
   background-color: #F8E71D;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.bg-black {
+  background-color: #1E1E1E;
 }

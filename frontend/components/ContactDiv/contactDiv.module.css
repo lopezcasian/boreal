@@ -1,0 +1,19 @@
+.div {
+    text-align: left;
+    max-width: 150px;
+}
+
+.titleLine {
+    height: 2px;
+    width: 20%;
+    background-color: #888019;
+    margin-bottom: 1em;
+}
+
+.contact {
+    display: inline-block;
+}
+
+.h4 {
+    margin-bottom: 0px;
+}
