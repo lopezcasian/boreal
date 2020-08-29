@@ -1,0 +1,8 @@
+.link, .link:visited {
+    text-decoration-line: none;
+    color: black;
+}
+
+.active {
+    font-weight: bold;
+}
