@@ -23,3 +23,7 @@ body {
 .bg-black {
   background-color: #1E1E1E;
 }
+
+.button {
+  border-radius: 5px;
+}

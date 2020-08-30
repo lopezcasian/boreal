@@ -1,9 +1,12 @@
-import Layout from '../components/Layout/layout'
+import Layout from "../components/Layout/layout"
+import OurServices from "../components/OurServices/ourServices"
+import Gallery from "../components/Gallery/gallery"
 
 export default function Home() {
   return (
-    <Layout home>
-      <h1>Hi c:</h1>
+    <Layout>
+      <OurServices />
+      <Gallery />
     </Layout>
   )
 }

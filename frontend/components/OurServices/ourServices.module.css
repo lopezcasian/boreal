@@ -1,0 +1,58 @@
+.imagesDiv {
+    width: 100%;
+    height: 400px;
+}
+
+.biggestImg{
+    background-image: url("/img_slider.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 80%;
+    height: 100%;
+    display: inline-block;
+}
+
+.smalestImgDiv {
+    display: inline-block;
+    width: 20%;
+    height: 100%;
+}
+
+.VRImg {
+    background-image: url("/virtual reality.jpg");
+}
+
+.RealEstateImg {
+    background-image: url("/real estate video.jpg");
+}
+
+.VRImg, .RealEstateImg {
+    display: block;
+    width: 100%;
+    height: 50%;
+    background-size: cover;
+}
+
+.hireUsButton {
+    color: black;
+    width: 20%;
+    height: 2em;
+    border: none;
+}
+
+.hireUsButtonDiv {
+    text-align: right;
+    margin-top: 40px;
+}
+
+.descriptionDiv {
+    background-color: #171717;
+    color: #E3E3E3;
+    padding: 35px 10%;
+}
+
+.lessThanSymbol {
+    color: #F8E71D;
+    font-weight: bold;
+    margin-right: 5px;
+}

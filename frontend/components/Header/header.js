@@ -2,7 +2,7 @@ import styles from './header.module.css'
 import CustomLink from './CustomLink/customLink'
 
 export default function Header() {
-    let hireUsButtonClasses = [ "bg-yellow", "bold", ];
+    let hireUsButtonClasses = [ "button", "bg-yellow", "bold", ];
 
     return (
         <header className={ styles.header }>
