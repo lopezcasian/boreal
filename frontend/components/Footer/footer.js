@@ -1,6 +1,6 @@
 import styles from './footer.module.css'
 
-import ContactDiv from '../ContactDiv/contactDiv'
+import ContactDiv from './ContactDiv/contactDiv'
 
 export default function Footer(){
     let footerClasses = [ "bg-black", styles.footer ];

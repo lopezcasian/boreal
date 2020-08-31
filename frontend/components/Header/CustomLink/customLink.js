@@ -10,7 +10,7 @@ export default function CustomLink( props ) {
     if ( props.style ){
         aClasses = aClasses.concat(props.style);
     }
-
+    
     if( router.pathname === props.href ){
         aClasses.push( styles.active );
     }

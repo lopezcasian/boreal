@@ -6,8 +6,22 @@ export default function OurServices(){
             <div className={ styles.imagesDiv }>
                 <div className={ styles.biggestImg }></div>
                 <div className={ styles.smalestImgDiv }>
-                    <div className={ styles.VRImg }></div>
-                    <div className={ styles.RealEstateImg }></div>
+                    <div className={ styles.VrContainer }>
+                        <img src={"/virtual reality.jpg"}/>
+                        <div className={ styles.VrCover }>
+                            <div className={ styles.ServicesName }>
+                                <span>Virtual Reality</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={ styles.RealEstateContainer }>
+                        <img src={"/real estate video.jpg"}/>
+                        <div className={ styles.RealEstateCover }>
+                            <div className={ styles.ServicesName }>
+                                <span>Real State Video</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 

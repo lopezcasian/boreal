@@ -18,19 +18,48 @@
     height: 100%;
 }
 
-.VRImg {
-    background-image: url("/virtual reality.jpg");
-}
-
-.RealEstateImg {
-    background-image: url("/real estate video.jpg");
-}
-
-.VRImg, .RealEstateImg {
+.VrContainer, .RealEstateContainer {
     display: block;
+    position: relative;
     width: 100%;
     height: 50%;
-    background-size: cover;
+}
+
+.VrContainer img, .RealEstateContainer img {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.VrCover, .RealEstateCover {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    background-color: rgba(248, 231, 29, 0.7);
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+
+.VrContainer:hover .VrCover, .RealEstateContainer:hover .RealEstateCover {
+    width: 100%;
+    left: 0;
+}
+
+.ServicesName {
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+}
+
+.ServicesName > span {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 2px;
 }
 
 .hireUsButton {
@@ -46,9 +75,25 @@
 }
 
 .descriptionDiv {
+    position: relative;
     background-color: #171717;
     color: #E3E3E3;
-    padding: 35px 10%;
+    padding: 35px 10% 0 10%;
+}
+
+.descriptionDiv:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    background: inherit;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    z-index: -1;
+    transform-origin: bottom left;
+    transform: skewY(4deg);
 }
 
 .lessThanSymbol {

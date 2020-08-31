@@ -1,0 +1,23 @@
+.container {
+    padding: 0 10%;
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.content {
+    margin: auto 15px;
+}
+
+.blogContent {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 0 10px;
+    margin-bottom: 10px;
+}
+
+.blogContent h3 {
+    margin-bottom: 0;
+}
